@@ -18,6 +18,7 @@ const Login = () => {
             //if(succ.data.username===uname && succ.data.password===pass){
             if (succ.data.logged_admin) {
                 setMsg("Login Successfull");
+                //window.location="/dashboard";
                 if (succ.data.logged_session) {
                     alert("welcome Mr "+succ.data.logged_session+ "<---session" );
                     <td id="nav"> <Link to="/">Logout</Link> </td>
