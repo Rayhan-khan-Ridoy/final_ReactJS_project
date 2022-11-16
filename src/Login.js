@@ -14,7 +14,7 @@ const Login = () => {
         e.preventDefault();
         var obj = { username: uname, password: pass };
         axios.post("http://127.0.0.1:8000/api/adminLogin", obj).then((succ) => {
-            debugger;
+           // debugger;
             //if(succ.data.username===uname && succ.data.password===pass){
             if (succ.data.logged_admin) {
                 setMsg("Login Successfull");
